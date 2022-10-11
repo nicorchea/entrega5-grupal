@@ -1,0 +1,46 @@
+/* QUITAMOS LOS PUNOS DE LA LISTA */
+ul {
+  list-style-type: none;
+}
+
+/* QUERY DE PANTALLA COMPLETA */
+@media (max-width: 1920px) {
+  /* PONE LOS PARRAFOS EN 3 COLUMNAS */
+  .columnas-3 {
+    column-count: 3;
+  }
+  /* QUITA Y AGREGA ELEMENTOS DEL NAVBAR SEGUN CORRESPONDA */
+  #options-link,
+  #form-md,
+  #options-menu {
+    display: none;
+  }
+}
+
+/* QUERY PANTALLA MD */
+@media (max-width: 767px) {
+  /* PONE LOS PARRAFOS EN 2 COLUMNAS */
+  .columnas-3 {
+    column-count: 2;
+  }
+  /* QUITA Y AGREGA ELEMENTOS DEL NAVBAR SEGUN CORRESPONDA */
+
+  #options,
+  #title,
+  #carousel {
+    display: none;
+  }
+  #options-link,
+  #form-md {
+    display: block;
+  }
+  #form-xl {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .columnas-3 {
+    column-count: 1;
+  }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!-- CREAMOS UN DOCUMENTO HTML Y CARGAMOS LAS LIBRERIAS DE BOOTSTRAP -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Grupal 5</title>
+  </head>
+  <body>
+    <!-- AGREGAMOS LA NAVBAR DE BOOTSTRAP BG SECONDARY PARA EL COLOR -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand me-5" href="#">LOREM IPSUM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- CAMBIAMOS LOS NOMBRES DE LOS LINKS y AGREGAMOS MARGENES -->
+          <div id="form-md">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active me-5" aria-current="page" href="#"
+                >dolor</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-5" href="#">sit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">amet</a>
+            </li>
+            <li class="nav-item" id="options-link">
+              <a class="nav-link" href="#" id="options-btn">Opciones</a>
+            </li>
+          </ul>
+          <!-- ELIMINAMOS EL BOTON -->
+          <div id="form-xl">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CREAMOS UN CONTEINER DONDE CARGAR EL CONTENIDO y UN ARCHIVO CSS DONDE CARGAR LOS ESTILOS NECESARIOS -->
+
+    <div class="container text-center mt-5 mb-3">
+      <h3 id="title">Lorem ipsum...</h3>
+
+      <!-- CARGAMOS EL CARRUSEL -->
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- AGREGAMOS TIEMPOS, CARGAMOS PARRAFOS Y BORRAMOS LA IMAGENES -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              excepturi, eius similique architecto soluta facere iure
+              repellendus reiciendis repudiandae?
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              .t. Nulipsum dolor sit amet consectetur, adipisicing
+              eliconsequatur laudantium? Sequi, quis animi. Unde sed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="options-menu">
+      <ul class="list-group w-100 mt-0">
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 1</a>
+        </li>
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 2</a>
+        </li>
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 3</a>
+        </li>
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 4</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex container">
+      <!-- AGREGAMOS EL list-group DE BOOTSTRAP CON LA OPCIONES NECESARIAS -->
+
+      <ul class="list-group w-25 fs-6" id="options">
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 1</a>
+        </li>
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 2</a>
+        </li>
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 3</a>
+        </li>
+        <li class="list-group-item p-3">
+          <a href="" class="text-muted"> Opción 4</a>
+        </li>
+      </ul>
+
+      <!-- CREAMOS UN UL CON 3 LI PARA PARTIR EL PARRAFO EN 3 FILAS -->
+
+      <div>
+        <div class="container">
+          <ul class="ps-2">
+            <li class="mb-2 bg-light columnas-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              doloremque, molestiae incidunt quia qui, aspernatur numquam neque
+              mollitia iure minus vel obcaecati ipsa nesciunt inventore fugiat
+              corrupti architecto impedit reiciendis!Loremlo Lorem ipsum dolor
+              sit amet consectetur
+            </li>
+            <li class="mb-2 bg-light columnas-3">
+              adipisicing elit. Tempora eligendi eius maxime, est ut reiciendis
+              debitis voluptatem, voluptates ducimus numquam voluptatum sint
+              esse velit atque illum deserunt quia officia error. Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit. Placeat odit non
+              veniam debitis
+            </li>
+            <li class="bg-light columnas-3">
+              asperiores tempore consequuntur, distinctio, vero pariatur optio
+              qui voluptate minus delectus quas voluptatibus quae repellat in
+              quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Deserunt quas impedit nobis velit excepturi ipsam, quidem
+              debitis hic architecto quibusdam! Aspernatur magni magnam
+              doloremque consectetur quidem nesciunt assumenda inventore aut.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////// -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
